@@ -39,6 +39,8 @@ Error.parameters = {
 
 
 
+
+
 export const PinTask = Template.bind({});
 PinTask.parameters = Default.parameters;
 PinTask.play = async ({ canvasElement }) => {
@@ -52,7 +54,7 @@ PinTask.play = async ({ canvasElement }) => {
   const pinButton = await findByRole(itemToPin, 'button', { name: 'pin' });
 
   // Click the pin button
-  await userEvent.click(pinButton);
+  await userEvent.click(pinButton);p
 
   // Check that the pin button is now a unpin button
   const unpinButton = within(itemToPin).getByRole('button', { name: 'unpin' });
