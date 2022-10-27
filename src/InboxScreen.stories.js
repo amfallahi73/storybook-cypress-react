@@ -37,6 +37,10 @@ Error.parameters = {
   },
 };
 
+
+
+
+
 export const PinTask = Template.bind({});
 PinTask.parameters = Default.parameters;
 PinTask.play = async ({ canvasElement }) => {
